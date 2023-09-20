@@ -25,6 +25,9 @@ namespace Barbearia
 
             builder.Services.AddScoped<IBarbeiroRepositorio, BarbeiroRepositorio>();
             builder.Services.AddScoped<IServicoRepositorio, ServicoRepositorio>();
+            builder.Services.AddScoped<IClienteRepositorio, ClienteRepositorio>();
+            builder.Services.AddScoped<IBarbeariaRepositorio, BarbeariaRepositorio>();
+            builder.Services.AddScoped<IAgendamentoRepositorio, AgendamentoRepositorio>();
 
             var app = builder.Build();
 
